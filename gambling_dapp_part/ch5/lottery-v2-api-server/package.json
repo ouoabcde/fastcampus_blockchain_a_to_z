@@ -1,0 +1,26 @@
+{
+  "name": "lottery-v2-api-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "goerliStart": "NODE_ENV=goerli node ./bin/www"
+  },
+  "dependencies": {
+    "@ethereumjs/tx": "^4.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.21",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^6.25.2",
+    "web3": "^1.8.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.1"
+  }
+}

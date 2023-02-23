@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    container_name: lottery-db
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=lottery_db
+      - MYSQL_ROOT_PASSWORD=lotteryv2
+      - TZ=Asia/Seoul
+    volumes:
+      - ./data/lottery-data:/var/lib/mysql
